@@ -1,18 +1,165 @@
-# Getting Started with Create React App
+# 🎬 Web Movies
+
+A modern React application for browsing and discovering movies powered by [The Movie Database (TMDB) API](https://www.themoviedb.org/settings/api).
+
+## ✨ Features
+
+- **Browse Movies**: Explore top-rated and popular movies
+- **Movie Details**: View detailed information about each movie including synopsis, ratings, and release date
+- **Search**: Find movies by title
+- **Carousel Navigation**: Browse through collections with smooth navigation
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Fast Performance**: Built with React and optimized for production
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 18, TypeScript
+- **Styling**: CSS, Bootstrap, React Bootstrap Icons
+- **API**: TMDB API v3/v4
+- **Routing**: React Router DOM
+- **HTTP Client**: Axios
+- **Build Tool**: Create React App with Webpack
+- **Package Manager**: npm
+
+## 📋 Prerequisites
+
+- Node.js 20 or newer
+- npm 9 or newer
+- TMDB API credentials
+
+## 🚀 Quick Start
+
+### 1. Clone and Install
+
+```bash
+git clone <repository-url>
+cd web-movies
+npm install
+```
+
+### 2. Configure API Key
+
+Create a `.env` file in the project root with your TMDB API credentials:
+
+**Option A: Using TMDB v3 API Key**
+
+```env
+REACT_APP_TMDB_API_KEY=your_tmdb_v3_api_key
+```
+
+**Option B: Using TMDB v4 Read Access Token**
+
+```env
+REACT_APP_TMDB_READ_ACCESS_TOKEN=your_tmdb_v4_read_access_token
+```
+
+⚠️ **Note**: The existing credential was revoked and must be replaced with your own from your [TMDB account](https://www.themoviedb.org/settings/api).
+
+### 3. Start Development Server
+
+```bash
+npm start
+```
+
+The app will open at [http://localhost:3000](http://localhost:3000) and hot-reload on code changes.
+
+## 📦 Available Scripts
+
+| Command         | Description                                          |
+| --------------- | ---------------------------------------------------- |
+| `npm start`     | Runs development server on http://localhost:3000     |
+| `npm run build` | Creates optimized production build in `/build`       |
+| `npm test`      | Launches test runner in watch mode                   |
+| `npm run eject` | Ejects Create React App configuration (irreversible) |
+
+## 📁 Project Structure
+
+```
+src/
+├── api/              # API calls and services
+│   ├── api.ts       # API configuration
+│   └── movies.ts    # Movie-related API functions
+├── components/       # Reusable React components
+│   ├── Cards/       # Movie card component
+│   ├── Layout/      # Layout wrapper with Header, Footer, Main
+│   │   └── components/
+│   │       ├── Header/
+│   │       │   └── NavBar/
+│   │       ├── Footer/
+│   │       └── Main/
+│   └── Paginator/   # Pagination component
+├── screens/         # Page components
+│   ├── Home/       # Homepage with sliders
+│   ├── Details/    # Movie detail page
+│   ├── Popular/    # Popular movies
+│   ├── NewMovies/  # New movies
+│   └── Search/     # Search results
+├── types/           # TypeScript type definitions
+├── assets/          # Images and static files
+├── App.tsx          # Main App component
+└── index.tsx        # React entry point
+```
+
+## 🌐 API Integration
+
+The app integrates with TMDB API to fetch:
+
+- Top-rated movies
+- Popular movies
+- New releases
+- Movie details and metadata
+- Search results
+
+## 🔧 Configuration
+
+### Environment Variables
+
+Create a `.env` file with:
+
+```env
+# Required: TMDB API Credentials (choose one)
+REACT_APP_TMDB_API_KEY=your_key_here
+# or
+REACT_APP_TMDB_READ_ACCESS_TOKEN=your_token_here
+```
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 🚢 Deployment
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+This creates an optimized production build in the `/build` directory.
+
+### Deploy to Netlify (included Procfile for Heroku)
+
+The project includes a `Procfile` for Heroku deployment:
+
+```bash
+git push heroku main
+```
+
+Ensure your `REACT_APP_TMDB_API_KEY` or `REACT_APP_TMDB_READ_ACCESS_TOKEN` is set as a config var in Heroku.
+
+## 📝 Notes
+
+- Restart the development server after modifying `.env` files
+- The build is optimized for production performance
+- Ensure your TMDB API credentials have the necessary permissions
+- API rate limits apply; check TMDB documentation for limits
+
+## 📜 License
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 ### `npm test`
 
