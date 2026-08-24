@@ -1,0 +1,14 @@
+.footer{
+    background-color: black;
+    color:#ffff;
+    min-height: 60px;
+    margin-top: 2rem;
+}
+.footer-txt{
+    font-size: 15px;
+  text-align: center;
+    right: 20rem;
+}
+.popLogo{
+  width: 40px;
+}
