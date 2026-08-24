@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.63d0f6ed.css",
-    "main.js": "/static/js/main.340dab76.js",
-    "static/media/me.png": "/static/media/me.abbdecaea54ef2745c0f.png",
-    "static/media/appLogo.jpg": "/static/media/appLogo.45e7ac08b5cb19e5abe8.jpg",
-    "static/media/not-found.jpg": "/static/media/not-found.c179f19416f8c7fa5123.jpg",
-    "static/media/wall-search.jpg": "/static/media/wall-search.1ecb2877429078c58d31.jpg",
-    "index.html": "/index.html",
-    "main.63d0f6ed.css.map": "/static/css/main.63d0f6ed.css.map",
-    "main.340dab76.js.map": "/static/js/main.340dab76.js.map"
+    "main.css": "/web_movies.github.io/static/css/main.63d0f6ed.css",
+    "main.js": "/web_movies.github.io/static/js/main.9cca8c23.js",
+    "static/media/me.png": "/web_movies.github.io/static/media/me.abbdecaea54ef2745c0f.png",
+    "static/media/appLogo.jpg": "/web_movies.github.io/static/media/appLogo.45e7ac08b5cb19e5abe8.jpg",
+    "static/media/not-found.jpg": "/web_movies.github.io/static/media/not-found.c179f19416f8c7fa5123.jpg",
+    "static/media/wall-search.jpg": "/web_movies.github.io/static/media/wall-search.1ecb2877429078c58d31.jpg",
+    "index.html": "/web_movies.github.io/index.html",
+    "main.63d0f6ed.css.map": "/web_movies.github.io/static/css/main.63d0f6ed.css.map",
+    "main.9cca8c23.js.map": "/web_movies.github.io/static/js/main.9cca8c23.js.map"
   },
   "entrypoints": [
     "static/css/main.63d0f6ed.css",
-    "static/js/main.340dab76.js"
+    "static/js/main.9cca8c23.js"
   ]
 }
